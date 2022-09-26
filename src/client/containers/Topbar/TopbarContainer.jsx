@@ -150,6 +150,7 @@ class TopbarContainer extends React.Component {
               <div className='title-area uk-float-left'>
                 <div className='logo'>
                   <img src={viewdata.get('logoImage')} alt='Logo' className={'site-logo'} />
+                  {/* <img src="https://www.incometrader.com/assets/img/incometrader-logo.png" alt="Logo IncometraderÃ¥"></img> */}
                 </div>
               </div>
               <section className='top-bar-section uk-clearfix'>
