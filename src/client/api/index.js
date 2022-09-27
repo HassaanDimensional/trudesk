@@ -442,9 +442,29 @@ api.common.fetchViewData = () => {
   });
 };
 
+//blog
 api.blogEditor = {};
+
 api.blogEditor.postBlogForm = (payload) => {
-  return axios.post('/api/v2/blog', payload).then((res) => {
+  return axios.post('/api/v2/postblog', payload).then((res) => {
+    return res.data;
+  });
+};
+
+api.blogEditor.getBlogForm = () => {
+  return axios.get('/api/v2/getblog').then((res) => {
+    return res.data;
+  });
+};
+
+api.blogEditor.editBlogForm = (payload) => {
+  return axios.put('/api/v2/editblog',payload).then((res) => {
+    return res.data;
+  });
+};
+
+api.blogEditor.deleteBlogForm = (payload) => {
+  return axios.post('/api/v2/deleteblog',payload).then((res) => {
     return res.data;
   });
 };

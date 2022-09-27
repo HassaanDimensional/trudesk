@@ -27,6 +27,8 @@ import OffCanvasTrigger from 'components/OffCanvas/OffCanvasTrigger'
 import NoticeBanner from 'components/NoticeBanner'
 import NotificationsDropdownPartial from './notificationsDropdown'
 
+
+
 import ProfileDropdownPartial from 'containers/Topbar/profileDropdown'
 import ConversationsDropdownPartial from 'containers/Topbar/conversationsDropdown'
 import OnlineUserListPartial from 'containers/Topbar/onlineUserList'
@@ -149,12 +151,13 @@ class TopbarContainer extends React.Component {
             <div className='top-bar' data-topbar>
               <div className='title-area uk-float-left'>
                 <div className='logo'>
+                  {/* <img src={"../../../client/assets/logo.png"} alt='Logo' className={'site-logo'} /> */}
                   <img src={viewdata.get('logoImage')} alt='Logo' className={'site-logo'} />
                   {/* <img src="https://www.incometrader.com/assets/img/incometrader-logo.png" alt="Logo IncometraderÃ¥"></img> */}
                 </div>
               </div>
               <section className='top-bar-section uk-clearfix'>
-                <div className='top-menu uk-float-right'>
+                <div className='top-menu uk-float-right'> 
                   <ul className='uk-subnav uk-margin-bottom-remove'>
                     {/* Start Create Ticket Perm */}
                     {sessionUser && helpers.canUser('tickets:create') && (
